@@ -2,7 +2,8 @@
 
 [source,bash]
 ----
-gradle clean build
+gradle bootRun-service
+gradle bootRun-client
 ----
 
 read more

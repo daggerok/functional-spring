@@ -18,6 +18,12 @@ before_install:
   - source "$HOME/.sdkman/bin/sdkman-init.sh"
 script:
   - gradle clean build
+  - gradle bootRun-service &
+  - sleep 10
+  - gradle bootRun-client &
+  - sleep 10
+  - echo "you should be abe to see hi"
+  - sleep 5
 after_script:
   - gradle --stop
 cache:
