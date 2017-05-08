@@ -1,0 +1,11 @@
+plugins {
+    id 'idea'
+}
+
+['clean', 'assemble', 'test', 'build'].each { taskName ->
+    tasks.create(taskName) { task ->
+        ['reactive-service', 'reactive-client'].each { projectName ->
+            dependsOn gradle.includedBuild(projectName).task(":$taskName")
+        }
+    }
+}

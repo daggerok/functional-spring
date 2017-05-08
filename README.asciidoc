@@ -1,0 +1,10 @@
+= functional-spring image:https://travis-ci.org/daggerok/functional-spring.svg?branch=master["Build Status", link="https://travis-ci.org/daggerok/reactive-spring"]
+
+[source,bash]
+----
+gradle clean build
+----
+
+read more
+
+* https://github.com/spring-projects/spring-retry[spring-retry]
