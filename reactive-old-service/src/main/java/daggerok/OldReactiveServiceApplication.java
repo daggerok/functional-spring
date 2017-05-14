@@ -15,7 +15,7 @@ import static org.springframework.web.reactive.function.server.ServerResponse.ok
 
 @Slf4j
 @SpringBootApplication
-public class OtherReactiveServiceApplication {
+public class OldReactiveServiceApplication {
 
   @Bean
   public RouterFunction<ServerResponse> routes() {
@@ -55,7 +55,7 @@ public class OtherReactiveServiceApplication {
 */
   public static void main(String[] args) {
 
-    new SpringApplicationBuilder(OtherReactiveServiceApplication.class)
+    new SpringApplicationBuilder(OldReactiveServiceApplication.class)
         .properties(singletonMap("server.port", "8000"))
         .run(args);
   }
