@@ -1,3 +1,4 @@
 rootProject.name = 'functional-spring'
 includeBuild 'reactive-service'
+includeBuild 'reactive-other-service'
 includeBuild 'reactive-client'

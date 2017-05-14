@@ -3,6 +3,7 @@
 [source,bash]
 ----
 gradle bootRun-service
+gradle bootRun-other-service
 gradle bootRun-client
 ----
 

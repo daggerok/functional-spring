@@ -4,7 +4,8 @@ plugins {
 
 def projectNames = [
         'reactive-service',
-        'reactive-client'
+        'reactive-other-service',
+        'reactive-client',
 ]
 
 ['clean', 'assemble', 'test', 'build'].each { taskName ->
